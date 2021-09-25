@@ -1,0 +1,202 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #C5E4E7;
+  font-family: 'STIX Two Text', serif;
+  color:#00474B;
+}
+.principal-content {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 30px;
+}
+.content {
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+}
+.result-content {
+  background-color: #00474B;
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  margin-right: 8px;
+  display: flex;
+  padding-top : 20px;
+  flex-direction: column;
+}
+
+.result-content button {
+  background-color: #9FE8DF;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 50px ;
+}
+.result-content h1 {
+  color: #1EC2AA
+}
+.result-content  {
+  color: white
+}
+
+.content-bill input[type='number']{
+   height: 30px;
+   width: 90%;
+   background-color: #e0f0f2;
+   border: none;
+   text-align: right;
+   padding: 0px 5px;
+   color:#00474B;
+   font-size: 20px;
+   font-weight: 500;
+   
+}
+
+.content-bill input[type='number']:focus {
+  outline: none;
+  border: 1px solid #1EC2AA;
+  border-radius: 2px;
+
+  
+}
+.content-bill input[type=number]::-webkit-inner-spin-button, 
+.content-bill input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.content-bill {
+  height: 40vh;
+  width: 40%;
+  margin-right: 10px;
+}
+.top-label {
+  display: block;
+  margin: .5em 0 0 0;
+}
+
+.content-buttons input[type ='radio'] {
+ display: none;
+}
+.content-buttons {
+ width: 90%;
+ display: flex;
+ flex-wrap: wrap;
+ margin: 20px 0px;
+}
+.content-buttons label {
+  background-color: #00474B;
+  margin: 5px;
+  padding: 5px 15px;
+  display: inline-block;
+  width: 50px;
+  color: white;
+  font-weight: 500;
+  cursor:pointer
+}
+.content-buttons label:hover {
+  background-color: #1EC2AA;
+  color:#00474B;
+  font-weight: 500;
+}
+.content-buttons input[type ='radio']:checked + label{
+  background-color: #1EC2AA;
+  color:#00474B;
+  font-weight: 500;
+}
+.content-buttons span {
+  width: 100%;
+}
+.empty {
+  display: none;
+  color: red
+}
+.result-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+
+}
+.result-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.result-text span {
+  color: #8baeb1;
+}
+
+#custom-text {
+ display: none;
+ width: 50px; 
+ margin-top: 5px;
+ margin-left: 5px;
+ padding: 1px 12px;
+}
+.content-icon {
+  position: relative;
+}
+.icon {
+position: absolute;
+left: 10px;
+top: 5px;
+}
+.icon-user {
+position: absolute;
+left: 10px;
+
+}
+
+@media (max-width: 834px) {
+  .content{
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  .result-content {
+    background-color: #00474B;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 8px;
+    display: flex;
+    padding : 20px 0px;
+    flex-direction: column;
+  }
+  
+   .content-bill {
+    width: 70%;
+   }
+
+}
